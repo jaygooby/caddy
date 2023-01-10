@@ -44,8 +44,7 @@ func TestRedirect(t *testing.T) {
 func TestArticleIndexRedirect(t *testing.T) {
 
 	// temporary dir to hold the caddy config
-	// tmpdir := t.TempDir()
-	tmpdir := "/tmp/caddy"
+	tmpdir := t.TempDir()
 
 	err := os.MkdirAll(filepath.Join(tmpdir,"expert-caddy"), os.ModePerm)
 	if err != nil {
