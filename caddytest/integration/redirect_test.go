@@ -137,8 +137,7 @@ func TestNonCanonicalizedRewrittenFilename(t *testing.T) {
 
 	  localhost:9080 {
 
-			 root * /tmp/caddy
-			 # %s
+			 root * %s
 
 			 file_server
        templates
